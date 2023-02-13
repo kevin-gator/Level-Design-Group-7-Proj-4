@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
         head.rotation = Quaternion.Euler(_xRotation, _yRotation, _zRot);
         orientation.rotation = Quaternion.Euler(0, _yRotation, 0);
         #endregion
-
+        /*
         if (anchoredToObject)
         {
             _cc.enabled = false;
@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             _cc.enabled = true;
-        }
+        }*/
 
 
         if (anchoredToObject)
