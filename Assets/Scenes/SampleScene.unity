@@ -223,7 +223,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27578
+  m_Name: pb_Mesh37172
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -825,6 +825,7 @@ GameObject:
   - component: {fileID: 1940875471}
   - component: {fileID: 1940875472}
   - component: {fileID: 1940875473}
+  - component: {fileID: 1940875474}
   m_Layer: 6
   m_Name: Raft
   m_TagString: Untagged
@@ -3680,8 +3681,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940875464}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1.9449997, z: 42.25}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: 3.972011, y: 1.9449997, z: 39.250004}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3691,7 +3692,7 @@ Transform:
   - {fileID: 430988756}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!54 &1940875471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3742,6 +3743,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0432446, y: 0.07439709, z: 1.717349}
   m_Center: {x: 0.5216223, y: 0.03642088, z: -0.6734319}
+--- !u!114 &1940875474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940875464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0569d7d0833295b4fbd1947ce9a2109c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMoving: 0
+  _speed: 4
+  _rb: {fileID: 0}
 --- !u!1 &1982779984
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,7 +3851,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982779984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
   m_LocalPosition: {x: 2.986, y: 3, z: 40.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3845,7 +3861,7 @@ Transform:
   - {fileID: 56194061}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1982779989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3866,7 +3882,7 @@ MonoBehaviour:
   head: {fileID: 56194061}
   orientation: {fileID: 2032653108}
   anchorObject: {fileID: 1940875470}
-  offsetFromAnchor: {x: 1, y: 1, z: -1}
+  offsetFromAnchor: {x: -1, y: 1, z: 1}
   isGrounded: 0
   isMoving: 0
   anchoredToObject: 0
