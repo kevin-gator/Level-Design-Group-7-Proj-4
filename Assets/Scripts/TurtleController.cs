@@ -8,6 +8,8 @@ public class TurtleController : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private Vector3 cameraPosition;
     private Rigidbody rb;
+    [SerializeField] private AudioClip waveCrash;
+    [SerializeField] private AudioClip roar;
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +30,10 @@ public class TurtleController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         this.rb = player.GetComponent<Rigidbody>();
-        player.GetComponent<PlayerController>().enabled = false;
-        Camera.main.transform.position = cameraPosition;
+        this.player.GetComponent<PlayerController>().enabled = false;
+        Camera.main.transform.position = this.cameraPosition;
         Camera.main.transform.LookAt(this.transform.position);
+        AudioSource.PlayClipAtPoint(this.waveCrash, this.cameraPosition);
+        AudioSource.PlayClipAtPoint(this.roar, this.cameraPosition);
     }
 }
