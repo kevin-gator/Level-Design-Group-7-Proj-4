@@ -420,4 +420,10 @@ public class PlayerController : MonoBehaviour
     {
         gameObject.transform.position = obj.position + offsetFromAnchor;
     }
+
+    public void Dismount()
+    {
+        anchoredToObject = false;
+        _cc.enabled = true;
+    }
 }

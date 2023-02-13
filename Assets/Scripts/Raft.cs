@@ -32,7 +32,7 @@ public class Raft : MonoBehaviour
         }
     }
 
-    void StopMoving()
+    public void StopMoving()
     {
         isMoving = false;
     }
