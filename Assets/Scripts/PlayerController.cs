@@ -263,31 +263,11 @@ public class PlayerController : MonoBehaviour
         #region FRICTION
         if (!isGrounded)
         {
-            _groundedTimer = _bunnyHopWindow;
-        }
-        else if (isGrounded)
-        {
-            _groundedTimer -= Time.deltaTime;
-        }
-
-        if (_wallRunning)
-        {
-            _rb.drag = _frictionAmount;
-        }
-        else if (_groundedTimer <= 0)
-        {
-            if (velocityAsFloat > _rampSlideSpeedThreshold && _groundHitNormal.y < 1)
-            {
-                _rb.drag = 0;
-            }
-            else
-            {
-                _rb.drag = _frictionAmount;
-            }
+            _rb.drag = 0;
         }
         else
         {
-            _rb.drag = 0;
+            _rb.drag = _frictionAmount;
         }
         #endregion
 
