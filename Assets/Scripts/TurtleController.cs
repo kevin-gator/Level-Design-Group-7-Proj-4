@@ -35,5 +35,6 @@ public class TurtleController : MonoBehaviour
         Camera.main.transform.LookAt(this.transform.position);
         AudioSource.PlayClipAtPoint(this.waveCrash, this.cameraPosition);
         AudioSource.PlayClipAtPoint(this.roar, this.cameraPosition);
+        this.turtle.GetComponent<Animator>().CrossFade("TurtleRising", 0f);
     }
 }
